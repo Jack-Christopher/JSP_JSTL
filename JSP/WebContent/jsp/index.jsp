@@ -38,7 +38,7 @@ main
 </style>
 </head>
 
-<jsp:useBean id="myBean" class="project.Servlet" scope="session" /> 
+<jsp:useBean id="myBean" class="project.Servlet" scope="request" /> 
 
 <body>
 

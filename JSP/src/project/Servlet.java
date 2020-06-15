@@ -17,6 +17,8 @@ public class Servlet extends HttpServlet {
 	public String userAgent;
 	public String saludo;
 	
+	
+	public String saludo2 = new String("Bienvenido a mi pagina web");
 	public Date fecha2 = new Date(); 
 	
 	
@@ -24,8 +26,8 @@ public class Servlet extends HttpServlet {
     public Servlet() {
         super();
 		this.fecha = fecha2.toString();
-		this.userAgent = "mmm";
-		this.saludo = "Bienvenido a mi pagina web";
+		this.userAgent = "";
+		this.saludo = saludo2;
     }
     
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
